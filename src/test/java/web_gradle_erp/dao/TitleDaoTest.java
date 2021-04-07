@@ -1,7 +1,5 @@
 package web_gradle_erp.dao;
 
-import static org.junit.Assert.fail;
-
 import java.sql.Connection;
 import java.util.List;
 
@@ -43,7 +41,7 @@ public class TitleDaoTest {
 		System.out.printf("%s()%n", "testSelectTitleByAll");
 		List<Title> list = dao.selectTitleByAll();
 		Assert.assertNotNull(list);
-		
+
 		list.parallelStream().forEach(System.out::println);
 	}
 
