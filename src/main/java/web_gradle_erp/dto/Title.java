@@ -34,8 +34,10 @@ public class Title {
 
 	@Override
 	public String toString() {
-		return "Title [titleNo=" + titleNo + ", titleName=" + titleName + "]";
+		return String.format("Title [titleNo=%s, titleName=%s]", titleNo, titleName);
 	}
+
+	
 
 	
 
